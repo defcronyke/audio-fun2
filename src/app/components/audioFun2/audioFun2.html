@@ -1,0 +1,17 @@
+<div id="visual-area">
+
+	<canvas id="visual" width="800" height="600" style="border: 1px solid silver;"> HTML5 canvas not supported by your browser. Please use a better browser. </canvas>
+	
+	<p ng-bind="vm.audioFun2.visuals[vm.audioFun2.selectedVisual].name"></p>
+
+</div>
+
+<div id="audio-player-area"></div>
+
+<input id="audio-player-file" type="file">
+
+<div id="select-visual-area">
+	<div class="visual" ng-repeat="visual in vm.audioFun2.visuals track by $index">
+		<span class="visual-name" ng-bind="visual.name" ng-click="vm.audioFun2.changeVisual($index)" style="cursor: pointer;"></span>
+	</div>
+</div>
