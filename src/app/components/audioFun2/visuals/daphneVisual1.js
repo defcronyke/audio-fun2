@@ -1,3 +1,6 @@
+/*global turtle */
+/*jshint sub:true*/
+
 class DaphneVisual1 {
 	constructor(name) {
 		this.name = name;
@@ -82,8 +85,8 @@ class DaphneVisual1 {
 				let next_y = positions1[i+j][1];
 				pen.moveTo(current_x, current_y);
 				pen.penDown();
-				pen.moveTo(next_x, next_y)
-				pen.penUp;
+				pen.moveTo(next_x, next_y);
+				pen.penUp();
 			}
 		}
 		
@@ -118,8 +121,8 @@ class DaphneVisual1 {
 				let next_y = positions2[i+j][1];
 				pen.moveTo(current_x, current_y);
 				pen.penDown();
-				pen.moveTo(next_x, next_y)
-				pen.penUp;
+				pen.moveTo(next_x, next_y);
+				pen.penUp();
 			}
 		}
 		
@@ -154,8 +157,8 @@ class DaphneVisual1 {
 				let next_y = positions3[i+j][1];
 				pen.moveTo(current_x, current_y);
 				pen.penDown();
-				pen.moveTo(next_x, next_y)
-				pen.penUp;
+				pen.moveTo(next_x, next_y);
+				pen.penUp();
 			}
 		}
 	}

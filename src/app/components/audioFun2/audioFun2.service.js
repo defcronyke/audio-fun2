@@ -1,8 +1,15 @@
+/*global document */
+/*global AudioContext */
+/*global Uint8Array */
+/*global requestAnimationFrame */
+/*global console */
+/*global URL */
+
 import JeremyVisual1 from './visuals/jeremyVisual1';
 import DaphneVisual1 from './visuals/daphneVisual1';
 
 class AudioFun2Service {
-	constructor ($log, $http) {
+	constructor () {
 		'ngInject';
 		
 		this.visuals = [

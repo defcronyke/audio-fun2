@@ -1,3 +1,5 @@
+/*jshint sub:true*/
+
 class JeremyVisual1 {
 	constructor(name) {
 		this.name = name;
@@ -27,8 +29,6 @@ class JeremyVisual1 {
 			c.fillRect(i, this.canvas[0].height - data, 1, 15);
 			
 			if (data <= 8) {
-			
-				console.log('changing background colour');
 				
 				let rand_r = Math.floor(Math.random() * 255);
 				let rand_g = Math.floor(Math.random() * 255);
