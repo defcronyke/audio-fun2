@@ -36,6 +36,7 @@ class AudioFun2Service {
 		this.connectAudioAnalyzerToDestination();
 		this.createCanvasContext();
 		this.createTurtle();
+		this.changeVisual(this.selectedVisual);
 		
 		this.audioPlayerFile = angular.element('#audio-player-file');
 		this.audioPlayerFile[0].onchange = this.changeAudioFile.bind(this);
