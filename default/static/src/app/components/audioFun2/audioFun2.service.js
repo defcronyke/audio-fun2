@@ -24,10 +24,10 @@ class AudioFun2Service {
 			new DaphneVisual1('Daphne Visual 1'),
 			new DaphneVisual2('Daphne Visual 2'),
 			new DaphneVisual3('Daphne Visual 3'),
-			new DaphneVisual3('Daphne Visual 4')
+			new DaphneVisual4('Daphne Visual 4')
 		];
 		
-		this.selectedVisual = 2;
+		this.selectedVisual = 5;
 		
 		this.createAudioPlayer();
 		this.createAudioContext();
