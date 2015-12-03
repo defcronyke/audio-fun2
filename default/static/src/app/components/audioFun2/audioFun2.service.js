@@ -4,8 +4,10 @@
 /*global requestAnimationFrame */
 /*global console */
 /*global URL */
+/*global turtle */
 
 import JeremyVisual1 from './visuals/jeremyVisual1';
+import JeremyVisual2 from './visuals/jeremyVisual2';
 import DaphneVisual1 from './visuals/daphneVisual1';
 
 class AudioFun2Service {
@@ -14,10 +16,11 @@ class AudioFun2Service {
 		
 		this.visuals = [
 			new JeremyVisual1('Jeremy Visual 1'),
+			new JeremyVisual2('Jeremy Visual 2'),
 			new DaphneVisual1('Daphne Visual 1')
 		];
 		
-		this.selectedVisual = 1;
+		this.selectedVisual = 2;
 		
 		this.createAudioPlayer();
 		this.createAudioContext();
@@ -28,6 +31,7 @@ class AudioFun2Service {
 		this.connectAudioPlayerSourceToAudioAnalyzer();
 		this.connectAudioAnalyzerToDestination();
 		this.createCanvasContext();
+		this.createTurtle();
 		
 		this.audioPlayerFile = angular.element('#audio-player-file');
 		this.audioPlayerFile[0].onchange = this.changeAudioFile.bind(this);
@@ -91,6 +95,12 @@ class AudioFun2Service {
 		this.canvasContext.fillStyle = 'rgba(0, 0, 0, 1.0)';
 		this.canvasContext.fillRect(0, 0, this.canvasWidth, this.canvasHeight);
 		this.backgroundFillStyle = 'rgba(0, 0, 0, 1.0)';
+	}
+	
+	createTurtle() {
+		
+		this.pen = turtle.penFor(this.canvas[0]);
+		this.pen.moveTo(this.canvas[0].width/2, this.canvas[0].height/2);
 	}
 	
 	processAudio() {

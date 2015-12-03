@@ -1,0 +1,28 @@
+application: audiofun2
+module: default
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+- url: /.*
+  script: _go_app
+  secure: always
+
+skip_files:
+- static/bower_components
+- static/e2e
+- static/gulp
+- static/node_modules
+- static/src
+- static/.tmp
+- static/bower.json
+- static/gulpfile.js
+- static/karma.conf.js
+- static/package.json
+- static/protractor.conf.js
+- static/.bowerrc
+- static/.editorconfig
+- static/.gitignore
+- static/.jshintrc
+- static/.yo-rc.json
