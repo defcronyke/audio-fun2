@@ -5,6 +5,10 @@ class JeremyVisual2 {
 		this.name = name;
 	}
 	
+	init() {
+		
+	}
+	
 	draw() {
 		
 		let c = this.canvasContext;

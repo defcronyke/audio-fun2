@@ -137,6 +137,8 @@ class AudioFun2Service {
 		console.log('Changing to visual: ' + visualNum);
 		
 		this.selectedVisual = visualNum;
+		
+		this.visuals[this.selectedVisual].init.bind(this)();
 	}
 	
 	changeAudioFile() {

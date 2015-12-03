@@ -6,6 +6,10 @@ class DaphneVisual2 {
 		this.name = name;
 	}
 	
+	init() {
+		
+	}
+	
 	draw() {
 		
 		let c = this.canvasContext;
@@ -48,8 +52,8 @@ class DaphneVisual2 {
 			
 			pen.turn(data - next_data);
 			pen.forward(3);
-		};
-	};
-};
+		}
+	}
+}
 
 export default DaphneVisual2;

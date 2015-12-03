@@ -6,6 +6,10 @@ class DaphneVisual3 {
 		this.name = name;
 	}
 	
+	init() {
+		
+	}
+	
 	draw() {
 		
 		let c = this.canvasContext;
@@ -29,7 +33,7 @@ class DaphneVisual3 {
 				pen.color('rgba(0,'+ data +','+ next_data +',0.5)');
 			} else {
 				pen.color('rgba('+ Math.abs(data - next_data)*10 +','+ next_data +','+ data +',0.5)');
-			};
+			}
 			
 			//('rgba(0,'+ data +',0,1.0)')
 			
@@ -58,8 +62,8 @@ class DaphneVisual3 {
 			
 			pen.turn(data - next_data);
 			pen.forward(3);
-		};
-	};
-};
+		}
+	}
+}
 
 export default DaphneVisual3;
