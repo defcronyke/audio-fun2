@@ -9,6 +9,8 @@
 import JeremyVisual1 from './visuals/jeremyVisual1';
 import JeremyVisual2 from './visuals/jeremyVisual2';
 import DaphneVisual1 from './visuals/daphneVisual1';
+import DaphneVisual2 from './visuals/daphneVisual2';
+import DaphneVisual3 from './visuals/daphneVisual3';
 
 class AudioFun2Service {
 	constructor () {
@@ -17,7 +19,9 @@ class AudioFun2Service {
 		this.visuals = [
 			new JeremyVisual1('Jeremy Visual 1'),
 			new JeremyVisual2('Jeremy Visual 2'),
-			new DaphneVisual1('Daphne Visual 1')
+			new DaphneVisual1('Daphne Visual 1'),
+			new DaphneVisual2('Daphne Visual 2'),
+			new DaphneVisual3('Daphne Visual 3')
 		];
 		
 		this.selectedVisual = 2;
