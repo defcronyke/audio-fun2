@@ -1,7 +1,7 @@
 /*global turtle */
 /*jshint sub:true*/
 
-class DaphneVisual3 {
+class DaphneVisual4 {
 	constructor(name) {
 		this.name = name;
 	}
@@ -66,4 +66,4 @@ class DaphneVisual3 {
 	}
 }
 
-export default DaphneVisual3;
+export default DaphneVisual4;

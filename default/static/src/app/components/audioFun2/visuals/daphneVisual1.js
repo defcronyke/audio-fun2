@@ -6,6 +6,10 @@ class DaphneVisual1 {
 		this.name = name;
 	}
 	
+	init() {
+		
+	}
+	
 	draw() {
 		
 		let c = this.canvasContext;
