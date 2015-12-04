@@ -11,6 +11,8 @@ import JeremyVisual2 from './visuals/jeremyVisual2';
 import DaphneVisual1 from './visuals/daphneVisual1';
 import DaphneVisual2 from './visuals/daphneVisual2';
 import DaphneVisual3 from './visuals/daphneVisual3';
+import DaphneVisual4 from './visuals/daphneVisual4';
+
 
 class AudioFun2Service {
 	constructor () {
@@ -21,10 +23,11 @@ class AudioFun2Service {
 			new JeremyVisual2('Jeremy Visual 2'),
 			new DaphneVisual1('Daphne Visual 1'),
 			new DaphneVisual2('Daphne Visual 2'),
-			new DaphneVisual3('Daphne Visual 3')
+			new DaphneVisual3('Daphne Visual 3'),
+			new DaphneVisual4('Daphne Visual 4')
 		];
 		
-		this.selectedVisual = 1;
+		this.selectedVisual = 5;
 		
 		this.createAudioPlayer();
 		this.createAudioContext();
