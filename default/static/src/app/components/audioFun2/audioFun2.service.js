@@ -24,7 +24,7 @@ class AudioFun2Service {
 			new DaphneVisual3('Daphne Visual 3')
 		];
 		
-		this.selectedVisual = 2;
+		this.selectedVisual = 1;
 		
 		this.createAudioPlayer();
 		this.createAudioContext();
