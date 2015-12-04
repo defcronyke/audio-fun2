@@ -32,6 +32,11 @@ class DaphneVisual4 {
 			this.canvasContext.beginPath();
 			this.canvasContext.arc(x, y, r, 0, 2 * Math.PI, false);
 			this.canvasContext.fill();
+			
+			this.canvasContext.fillStyle = "rgba("+ Math.abs(data - antiData) +","+ data +","+ antiData +",1.0)";
+			this.canvasContext.beginPath();
+			this.canvasContext.arc(x, y, r/2, 0, 2 * Math.PI, false);
+			this.canvasContext.fill();
 		}
 	}
 }
